@@ -81,7 +81,7 @@ border-radius: 20px;
 
 @media only screen and (max-width: 786px) {
     .dress_style_container .dress_style_title p{
-        padding: 40px 50px 28px;
+        padding: 40px 50px 8px;
         font-size: 32px;
         line-height: 36px;
         
@@ -90,11 +90,14 @@ border-radius: 20px;
     .casual_formal_img, .party_gym_img{
         flex-direction: column;
         align-items: center;
+        padding: 20px 24px;
     }
 
     .casual_formal_img .casual_img img , .party_gym_img .gym_img img, 
     .casual_formal_img .formal_img img, .party_gym_img .party_img img {
-        width: 310px;
+        /* max-width: 500px;
+        max-height: 190px; */
+        max-width: 310px;
         max-height: 190px;
     }
 
