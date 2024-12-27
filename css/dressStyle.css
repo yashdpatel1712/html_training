@@ -3,7 +3,7 @@
     border-radius: 40px;
 }
 .dress_style_container .dress_style_title p{
-    padding: 70px 0 0 0;
+    padding: 70px 0 64px 0;
     text-align: center;
     font-family: "Integral CF", sans-serif;
     font-weight: 700;
@@ -11,18 +11,73 @@
     line-height: 57.6px;
 }
 
-    .casual_formal_img .casual_img {
-        background-image: url('../img/casual_full.png');
-        height: 500px; 
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: grid;
-        grid-column: 1 / 3;
-        grid-row: 3 / 3;
+.casual_formal_img{
+    padding: 0 0 20px 0;
+}
 
-        /* height: 100%;      */
-    }
+.party_gym_img{
+    padding: 0 0 76px 0;
+}
+
+.casual_formal_img, .party_gym_img{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+
+.casual_formal_img .casual_img img,
+.casual_formal_img .formal_img img {
+transform: scaleX(-1); 
+display: block;
+height: auto;
+object-fit: none;
+border-radius: 20px;
+}
+
+.party_gym_img .party_img img,
+.party_gym_img .gym_img img {
+display: block;
+height: auto;
+object-fit: none;
+border-radius: 20px;
+
+}
+
+.party_gym_img .gym_img img {
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: 30% 36%; 
+}
+
+.casual_formal_img .casual_img img , .party_gym_img .gym_img img{
+    width: 407px;
+    max-height: 289px;
+}
+
+.casual_formal_img .formal_img img, .party_gym_img .party_img img {
+    width: 684px;
+    max-height: 289px;
+}
+
+ .casual_img, .formal_img, .party_img, .gym_img {
+    position: relative;
+}
+.casual_title p, .formal_title p, .party_title p, .gym_title p {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    padding: 36px 0 0 25px;
+    font-family: "Satoshi Bold", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48.6px;
+    margin: 0;
+}
+
+
 
 @media only screen and (max-width: 786px) {
     .dress_style_container .dress_style_title p{
@@ -31,4 +86,32 @@
         line-height: 36px;
         
     }
+
+    .casual_formal_img, .party_gym_img{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .casual_formal_img .casual_img img , .party_gym_img .gym_img img, 
+    .casual_formal_img .formal_img img, .party_gym_img .party_img img {
+        width: 310px;
+        max-height: 190px;
+    }
+
+    .party_gym_img .party_img img {
+    border-radius: 20px;
+    object-fit: cover; /* Ensure the image covers the container */
+    object-position: 20% 100%; /* Crop 20% from the left and keep 80% from the right */
+    }
+    
+    .casual_title p, .formal_title p, .party_title p, .gym_title p {
+        padding: 16px 0 0 24px;
+        font-size: 24px;
+        line-height: 32.4px;
+    }
+
+    .party_gym_img {
+        padding: 0 0 27px 0;
+    }
+
 }
