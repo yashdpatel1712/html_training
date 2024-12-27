@@ -1,0 +1,176 @@
+.new_arrivals_container{
+    margin: 72px 0 0;
+    text-align: center;
+}
+
+.new_arrivals_container span{
+    font-family: "Integral CF", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    /* text-align: center; */
+}
+
+.arrivals_cloth{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 55px 0 0 0;
+    text-align: start;
+}
+
+.arrivals_cloth .cloth_name p{
+    font-family: "Satoshi Bold", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 16px 0 0 0;
+}
+
+.arrivals_cloth .rating_star_point{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    padding: 8px 0;
+}
+
+.rating_star_point .rating_star img{
+    max-width: 18.49px;
+}
+.rating_star_point .rating_point {
+    font-family: "Satoshi", sans-serif;
+    font-size: 14px;
+    line-height: 18.9px;
+}
+
+.rating_point{
+    display: flex;
+    flex-direction: row;
+}
+
+.get-rating p{
+    font-weight: 700;
+    /* margin: 0 0 0 13px; */
+}
+
+ .full-rating p{
+    font-weight: 400;   
+}
+
+.arrivals_cloth .cloth_price{
+    font-family: "Satoshi Bold", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+    /* padding: 8px 0; */
+    display: flex;
+    gap: 10px;
+}
+
+.arrivals_cloth .cloth_price .old_price{
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+}
+
+.cloth_price .dis-per p{
+    color: #FF3333;
+    padding: 0 13.5px;
+    font-size: 12px;
+    border: 1px solid #FF33331A;
+    border-radius: 62px;
+    background: #FF33331A;
+}
+
+.new_arrivals_container .arrivals_view_all {
+    padding: 36px 0 64px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.new_arrivals_container .arrivals_view_all p {
+    font-family: "Satoshi Bold", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.6px;
+    padding: 15px 80px;
+    max-width: 218px;
+    border: 1px solid black;
+    border-radius: 62px;
+}
+
+
+
+@media only screen and (max-width: 786px) {
+    .new_arrivals_container{
+        margin: 50px 0 0; 
+        text-align: center;
+    }
+    
+    .new_arrivals_container span{
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+    
+    .new_arrivals_container .page_wrapper {
+        padding: 0 0;
+        margin: 0 0;
+        overflow-x: hidden;
+    } 
+    
+    .arrivals_cloth .cloth_img img{
+        overflow: hidden;
+        max-width: 198px;
+        height: auto;
+    }
+
+    .arrivals_cloth{
+        gap: 16px;
+        padding: 32px 0 0 16px;
+    }
+
+    .arrivals_cloth .cloth_name p{
+        font-size: 13px;        
+        font-family: "Satoshi Bold", sans-serif;
+        line-height: 21.6px;
+        max-width: 198px;
+        padding: 10px 0 0 0;
+    }
+
+    .rating_star_point .rating_point {
+        font-family: "Satoshi", sans-serif;
+        font-size: 12px;
+        line-height: 16.2px;
+    }
+    
+    .rating_star_point .rating_star img{
+        max-width: 15.47px;
+    }
+
+    .arrivals_cloth .rating_star_point{
+        padding: 4px 0;
+        gap: 11px;
+    }
+
+    .arrivals_cloth .cloth_price {
+        font-size: 20px;
+        line-height: 27px;
+        gap: 5px;
+    }
+
+    .cloth_price .dis-per p{
+        padding: 0 8px;
+    }
+
+    .new_arrivals_container .arrivals_view_all {
+        padding: 24px 0 40px 0;
+    }
+    
+    .new_arrivals_container .arrivals_view_all p{
+        font-size: 14px;
+        line-height: 18.9px;
+        padding: 13px 153.5px;
+        max-width: 358px;
+    }
+    
+
+}

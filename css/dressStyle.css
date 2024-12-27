@@ -1,0 +1,34 @@
+.dress_style_container .dress_style_bgcolor {
+    background-color: #F0F0F0;
+    border-radius: 40px;
+}
+.dress_style_container .dress_style_title p{
+    padding: 70px 0 0 0;
+    text-align: center;
+    font-family: "Integral CF", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+}
+
+    .casual_formal_img .casual_img {
+        background-image: url('../img/casual_full.png');
+        height: 500px; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-column: 1 / 3;
+        grid-row: 3 / 3;
+
+        /* height: 100%;      */
+    }
+
+@media only screen and (max-width: 786px) {
+    .dress_style_container .dress_style_title p{
+        padding: 40px 50px 28px;
+        font-size: 32px;
+        line-height: 36px;
+        
+    }
+}

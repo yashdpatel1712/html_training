@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/newArrivals.css">
+  <link rel="stylesheet" href="css/dressStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+
+  <style>
+    @font-face {
+      font-family: "Integral CF";
+      src: url("fonts/Integral-CF/Webfont/IntegralCF-Bold.woff2") format("woff2"),
+        url("fonts/Integral-CF/Webfont/IntegralCF-Bold.woff") format("woff");
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Satoshi";
+      src: url("fonts/satoshi-webfont/Satoshi-Light.woff") format("woff");
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Satoshi Bold";
+      src: url("fonts/satoshi-webfont/Satoshi-Bold.woff.woff") format("woff");
+      font-style: normal;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="header_section">
+    <div id="overlay" style="display: none;"></div>
+    <div class="top_header_line">
+      <div class="page_wrapper">
+        <p>Sign up and get 20% off to your first order. <a href="javascript:void(0);">Sign Up Now</a></p>
+        <a href="javascript:void(0);" class="close"><img src="img/cross.png"></a>
+      </div>
+    </div>
+    <div class="main_header">
+      <div class="page_wrapper">
+        <div class="header_block">
+          <!-- <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label> -->
+          <div class="menu_bar">
+            <!-- <span>Main Menu</span> -->
+            <!-- <input type="checkbox" id="check"> -->
+            <span class="checkbtn" id="menuBar"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            
+          </div>
+
+          
+          <div class="logo">
+            <p>SHOP.CO</p>
+          </div>
+          <nav class="nav_bar">
+            <ul class="main_ul">
+              <li class="nav_bar_shop"><a href="#">Shop </a> <img src="img/down-arrow.png" alt="">
+                
+                <!-- <div class="menu-content">
+                  <a class="links-hidden" href="#">Contact Us</a>
+                  <a class="links-hidden" href="#">Visit Us</a>
+                  <a class="links-hidden" href="#">About Us</a>
+                </div> -->
+
+                <ul class="dropdown_shop">
+                  <li><a href="#" class="links-hidden">Men</a></li>
+                  <li><a href="#" class="links-hidden">Women</a></li>
+                  <li><a href="#" class="links-hidden">Child</a></li>
+                </ul>
+              
+              </li>
+              <li class="nav_bar_scale"><a href="#">On Scale</a></li>
+              <li class="nav_bar_arrival"><a href="#">New Arrivals</a></li>
+              <li class="nav_bar_brand"><a href="#">Brands</a></li>
+            </ul>
+          </nav>
+          <div class="search_block">
+            <input type="search" class="searchbar" placeholder=" Search for products..." id="">
+            <a href="#" class="user_account_search"><img src="img/searchBar.png"></a>
+          </div>
+          <div class="user_account">
+            <a href="#" id="searchButton" class="user_account_search"><img src="img/darkSearchBar.png"></a>
+            <div id="searchPopup" class="searchPopup" >
+                <input type="text" id="searchInput" placeholder="Type to search...">
+                <a href="#"><img src="img/darkSearchBar.png" alt=""></a>
+            </div>
+            <a href="javascript:void(0);"><img src="img/cart.png" class="cart" alt="Cart"></a>
+            <a href="javascript:void(0);"><img src="img/profile.png" class="profile" alt="Profile"></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="menu_bar">
+      <nav class="res_nav_bar">
+        <ul class="res_main_ul">
+          <div class="navbar_for_shop_title">
+            <a href="#">Shop</a><li class="res_nav_bar_shop"> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </div>
+            <ul class="res_dropdown_shop">
+              <li><a href="#" class="res_links-hidden">Men</a></li>
+              <li><a href="#" class="res_links-hidden">Women</a></li>
+              <li><a href="#" class="res_links-hidden">Child</a></li>
+            </ul>
+          
+          </li>
+          <li class="res_nav_bar_scale"><a href="#">On Scale</a></li>
+          <li class="res_nav_bar_arrival"><a href="#">New Arrivals</a></li>
+          <li class="res_nav_bar_brand"><a href="#">Brands</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="banner_section">
+    <div class="page_wrapper">
+      <div class="data_section">
+        <div class="banner_title">
+          <P>FIND CLOTHES THAT MATCHES YOUR STYLE</P>
+        </div>
+        <div class="banner_desc">
+          <P>Browse through our diverse range of meticulously crafted garments, 
+            designed to bring out your individuality and cater to your sense of style.</P>
+        </div>
+        <div class="banner_shop_btn">
+          <button>Shop Now</button>
+        </div>
+        <div class="banner_brand_number">
+          <div class="int-col">
+            <p class="banner_brand_total">200+</p>
+            <p class="banner_brand_total_name">International Brands</p>
+          </div>
+          <div class="vl"></div>
+          <div class="qlt-col">
+            <p class="banner_brand_total">2,000+</p>
+            <p class="banner_brand_total_name">High-Quality Products</p>
+          </div>
+          <div class="vl vl-second"></div>
+          <div class="cst-col">
+            <p class="banner_brand_total">30,000+</p>
+            <p class="banner_brand_total_name">Happy Customers</p>
+          </div>
+        </div>
+      </div>
+      <div class="banner_img">
+        <img src="img/couple.png" class="banner_main_img"alt="">
+        <!-- <div class="star_img">
+          <div class="star_img_top">
+            <img src="img/star.png" class="img_top" alt="">
+          </div>
+          <div class="star_img_bottom">
+            <img src="img/star.png" class="img_bottom" alt="">
+          </div>
+        </div> -->
+      </div>
+      
+    </div>
+  </div>
+  <div class="other_brand_logo">
+    <div class="page_wrapper">
+      <div class="brand_logo_img">
+        <img src="img/versace.png" alt="">
+        <img src="img/zara.png" alt="">
+        <img src="img/gucci.png" alt="">
+        <img src="img/prada.png" alt="">
+        <img src="img/CK.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- new arrivals container -->
+<div class="new_arrivals_container">
+  <div class="page_wrapper">
+    <span>NEW ARRIVALS</span>
+    <div class="arrivals_cloth">
+      <div class="arrivals_black_tshirt">
+        <div class="cloth_img">
+          <img src="img/blackTshirt.png" alt="">
+        </div>
+        <div class="cloth_name"><p>T-SHIRT WITH TAPE DETAILS</p></div>
+        <div class="rating_star_point">
+          <div class="rating_star">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-half.png" alt="">
+          </div>
+          <div class="rating_point">
+            <div class="get-rating"><p>4.5/</p></div><div class="full_rating"><p>5</p></div>
+          </div>
+        </div>
+        <div class="cloth_price">
+          <p class="new_price">$120</p>
+        </div>
+      </div>
+      <div class="arrivals_jeans">
+        <div class="cloth_img">
+          <img src="img/jeans.png" alt="">
+        </div>
+        <div class="cloth_name"><p>SKINNY FIT JEANS</p></div>
+        <div class="rating_star_point">
+          <div class="rating_star">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-half.png" alt="">
+          </div>
+          <div class="rating_point">
+            <div class="get-rating"><p>3.5/</p></div><div class="full_rating"><p>5</p></div>
+          </div>
+        </div>
+        <div class="cloth_price">
+          <p class="new_price">$240</p>
+          <p class="old_price">$260</p>
+          <div class="dis-per">
+            <p>-20%</p>
+          </div>
+        </div>
+      </div>
+      <div class="arrivals_jeans">
+        <div class="cloth_img">
+          <img src="img/shirt.png" alt="">
+        </div>
+        <div class="cloth_name"><p>CHECKERED SHIRT</p></div>
+        <div class="rating_star_point">
+          <div class="rating_star">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-half.png" alt="">
+          </div>
+          <div class="rating_point">
+            <div class="get-rating"><p>4.5/</p></div><div class="full_rating"><p>5</p></div>
+          </div>
+        </div>
+        <div class="cloth_price">
+          <p class="new_price">$180</p>
+        </div>
+      </div>
+      <div class="arrivals_jeans">
+        <div class="cloth_img">
+          <img src="img/tshirt.png" alt="">
+        </div>
+        <div class="cloth_name"><p>SLEEVE STRIPED T-SHIRT</p></div>
+        <div class="rating_star_point">
+          <div class="rating_star">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-half.png" alt="">
+          </div>
+          <div class="rating_point">
+            <div class="get-rating"><p>4.5/</p></div><div class="full_rating"><p>5</p></div>
+          </div>
+        </div>
+        <div class="cloth_price">
+          <p class="new_price">$130</p>
+          <p class="old_price">$160</p>
+          <div class="dis-per">
+            <p>-30%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrivals_view_all">
+      <p>View All</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider-line">
+  <div class="page_wrapper">
+    <hr>
+  </div>
+</div>
+
+
+
+<!-- top selling container -->
+<div class="new_arrivals_container">
+  <div class="page_wrapper">
+    <span>TOP SELLING</span>
+    <div class="arrivals_cloth">
+      <div class="arrivals_black_tshirt">
+        <div class="cloth_img">
+          <img src="img/greenShirt.png" alt="">
+        </div>
+        <div class="cloth_name"><p>VERTICAL STRIPED SHIRT</p></div>
+        <div class="rating_star_point">
+          <div class="rating_star">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+          </div>
+          <div class="rating_point">
+            <div class="get-rating"><p>5.0/</p></div><div class="full_rating"><p>5</p></div>
+          </div>
+        </div>
+        <div class="cloth_price">
+          <p class="new_price">$212</p>
+          <p class="old_price">$232</p>
+          <div class="dis-per">
+            <p>-20%</p>
+          </div>
+        </div>
+      </div>
+      <div class="arrivals_jeans">
+        <div class="cloth_img">
+          <img src="img/orangeTshirt.png" alt="">
+        </div>
+        <div class="cloth_name"><p>COURAGE GRAPHIC T-SHIRT</p></div>
+        <div class="rating_star_point">
+          <div class="rating_star">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+          </div>
+          <div class="rating_point">
+            <div class="get-rating"><p>4.0/</p></div><div class="full_rating"><p>5</p></div>
+          </div>
+        </div>
+        <div class="cloth_price">
+          <p class="new_price">$145</p>
+        </div>
+      </div>
+      <div class="arrivals_jeans">
+        <div class="cloth_img">
+          <img src="img/barmuda.png" alt="">
+        </div>
+        <div class="cloth_name"><p>LOOSE FIT BERMUDA SHORTS</p></div>
+        <div class="rating_star_point">
+          <div class="rating_star">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+          </div>
+          <div class="rating_point">
+            <div class="get-rating"><p>3.0/</p></div><div class="full_rating"><p>5</p></div>
+          </div>
+        </div>
+        <div class="cloth_price">
+          <p class="new_price">$80</p>
+        </div>
+      </div>
+      <div class="arrivals_jeans">
+        <div class="cloth_img">
+          <img src="img/blackJeans.png" alt="">
+        </div>
+        <div class="cloth_name"><p>FADED SKINNY JEANS</p></div>
+        <div class="rating_star_point">
+          <div class="rating_star">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-full.png" alt="">
+            <img src="img/star-half.png" alt="">
+          </div>
+          <div class="rating_point">
+            <div class="get-rating"><p>4.5/</p></div><div class="full_rating"><p>5</p></div>
+          </div>
+        </div>
+        <div class="cloth_price">
+          <p class="new_price">$210</p>
+        </div>
+      </div>
+    </div>
+    <div class="arrivals_view_all">
+      <p>View All</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="dress_style_container">
+  <div class="page_wrapper">
+    <div class="dress_style_bgcolor">
+      <div class="dress_style_title">
+        <p>BROWSE BY dress STYLE</p>
+      </div>
+      <div class="casual_formal_img" style="padding: 100px; ">
+        <!-- <img src="img/casual_full.png" style="width: 407px; height: 289px; transform: scaleX(-1);  object-fit: none;" alt=""> -->
+        <!-- <img src="img/formal_full.png" style="width: 684px; height: 289px; transform: scaleX(1);  object-fit: none; object-position: center top;" alt=""> -->
+        <div class="casual_img">
+          p
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuBar = document.getElementById("menuBar");
+      const navBar = document.querySelector(".res_nav_bar");
+      const dropdownNavShop = document.querySelector(".res_nav_bar_shop");
+      const dropdownShop = document.querySelector(".res_dropdown_shop");
+      
+      menuBar.addEventListener("click", function () {
+        event.stopPropagation(); 
+        navBar.classList.toggle("active");
+      });
+
+      dropdownNavShop.addEventListener("click", function () {
+        event.stopPropagation(); 
+        dropdownShop.classList.toggle("active");
+      });
+    });
+
+
+
+
+    
+    const searchButton = document.getElementById('searchButton');
+const searchPopup = document.getElementById('searchPopup');
+
+// Show the search popup when the button is clicked
+searchButton.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent the event from propagating to the document
+    searchPopup.style.display = 'block';
+});
+
+// Close the search popup when clicking outside of it
+document.addEventListener('click', (event) => {
+    if (!searchPopup.contains(event.target)) {
+        searchPopup.style.display = 'none';
+        overlay.style.display = 'none';
+    }
+});
+
+// Prevent clicks inside the popup from closing it
+searchPopup.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent the event from propagating to the document
+});
+
+searchButton.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent event bubbling
+    searchPopup.style.display = 'block';
+    overlay.style.display = 'block';
+    searchInput.focus(); // Automatically focus the input field
+});
+
+  </script>
+</body>
+</html>

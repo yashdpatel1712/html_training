@@ -1,0 +1,657 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**global css*/
+.page_wrapper{
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+
+/*custom css*/
+/*header**/
+.main_header {
+  padding: 24px 0;
+}
+.top_header_line{
+  background-color: #000;
+  padding:10px 0;
+}
+.top_header_line .page_wrapper{
+  position: relative;
+}
+.top_header_line p{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.9px;
+  text-align: center;
+  color: white;
+}
+.top_header_line p a{
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.top_header_line p a:hover{
+  text-decoration: none;
+}
+.top_header_line .close{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* navbar section */
+
+.nav_bar .dropdown_shop li a:hover { 
+	background-color: #000000;
+  color: white; 
+  /* min-width: 100px; */
+}
+
+.nav_bar_shop:focus-within .dropdown_shop {
+  display: block;
+}
+
+.dropdown_shop{
+  /* min-width: 150px; */
+  display: none;
+  position: absolute;
+  z-index: 1;
+  contain: inline-size;
+
+}
+
+.dropdown_shop li a {
+  min-width: 100px;
+  background-color: #848484;
+  display: inline-block;
+  padding: 8px 0;
+  text-decoration: none;  
+  font-size: 12px;
+
+}
+
+.nav_bar .dropdown_shop{
+	display: none;
+	position: absolute;  
+}
+
+
+.menu_bar {
+  display: none;
+}
+
+.header_block{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  max-width: 160px;
+  width: 100%;
+}
+
+.logo p{
+    font-family: "Integral CF", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+    margin: 0;
+}
+
+.nav_bar ul{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+.nav_bar ul li a{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: #000;
+  text-decoration: none;
+}
+
+.search_block {
+  max-width: 577px;
+  width: 100%;
+  position: relative;
+}
+
+.search_block input{
+  background-color: #F0F0F0;
+  border-radius: 62px;
+  width: 100%;
+  padding: 12px 12px 12px 52px; 
+  border: none;
+
+}
+
+.search_block a {
+  position: absolute;
+  top: 9px;
+  left: 16px;
+}
+
+.user_account .user_account_search {
+  display: none;
+}
+
+/* banner section */
+.banner_section {
+  background-color: #F2F0F1;
+  /* position: relative; */
+}
+
+.banner_section .page_wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.banner_title p{
+  font-family: "Integral CF", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  margin: 0;
+  max-width: 577px;
+  width: 100%;
+}
+
+.banner_title {
+  padding: 103px 0 0;
+}
+
+.banner_img {
+  max-width: 500px;
+  right: 10px;
+  /* top: 0; */
+  bottom: 0;
+  /* position: relative; */
+}
+
+.banner_img .banner_main_img {
+  width: 100%;
+  position: absolute;
+  max-width: 668px; 
+  object-fit: cover;
+  right: 0%;
+}
+
+.banner_img .star_img_top , 
+.banner_img .star_img_bottom {
+  position: absolute;
+}
+
+/* .banner_img .star_img_top img {
+  max-width: 104px;
+  width: 100%;
+  padding: 86px 81px 0 578px ;
+}
+
+.banner_img .star_img_bottom img {
+  max-width: 56px;
+  width: 100%;
+  padding: 297px 0 0 54px ;
+} */
+
+.banner_desc p{
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  max-width: 545px;
+  width: 100%;
+}
+
+.banner_desc {
+  padding: 32px 0 0;
+}
+
+.banner_shop_btn button{
+  max-width: 210px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 62px;
+  background-color: black;
+  color: white;
+  font-family: "Satoshi Bold", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.banner_shop_btn {
+  padding: 32px 0 0;
+}
+
+.banner_brand_number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 100%;
+  padding: 45px 0 116px ;
+}
+
+.banner_brand_number .vl {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.banner_brand_number .banner_brand_total {
+  font-family: "Satoshi Bold", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.banner_brand_number .banner_brand_total_name {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.searchPopup {
+  display: none;
+}
+
+.other_brand_logo{
+  background-color: #000;
+  padding:42px 0;
+}
+
+.brand_logo_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 786px) {
+  .page_wrapper {
+    padding: 0 16px;
+    max-width: 786px;
+  }
+  a.close{
+    display: none;
+  }
+
+  .nav_bar{
+    display: none;
+  }
+
+
+
+  /* .menu_bar {
+    display: block;
+  }
+  
+  .main_header {
+    padding: 20px 0;
+  } */
+
+  .menu_bar img {
+    width: 18.75px;
+    padding: 7px 0 0 0;
+  }
+
+  .header_block {
+    gap: 16px;
+  }
+
+  .logo{
+    max-width: 126px;
+  }
+
+  .logo p {
+    font-size: 25.2px;
+    line-height: 30.24px;
+  }
+
+  .search_block input , .search_block img{
+    display: none;
+    
+  }
+
+  .user_account .user_account_search {
+    display: block;
+  }
+
+  .search_block .user_account_search {
+    display: none;
+  }
+
+
+  .user_account {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .user_account a img {
+    width: 24px;
+    height: 24px;
+  }
+
+
+  /* .nav_bar.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+
+
+  /* .nav_bar .main_ul{
+    flex-direction: column;
+    background: #848484;
+    position: fixed;
+    gap: 0;
+    top: 100px;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    padding: 150px 0;
+  }
+  
+  .nav_bar .main_ul li a{
+    line-height: 17px;
+
+  }
+
+  .nav_bar .dropdown_shop li a {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .nav_bar_shop:focus-within .dropdown_shop {
+    position: static;
+    float: none;
+    display: block;
+  } */
+
+
+  /* .nav_bar ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav_bar ul li a {
+    font-size: 20px;
+  }
+
+  .nav_bar_shop img{
+    text-align: right;
+  } */
+
+  #searchPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Blur effect */
+    z-index: 1000; /* Sits below the popup */
+  }
+/* .hidden {
+    display: none;
+} */
+
+#searchPopup #searchInput{
+background-color: white;
+border-radius: 62px;
+width: 75%;
+padding: 12px 10px; 
+border: none;
+}
+
+#searchPopup img {
+  margin: -7px 0;
+}
+  /* banner section */
+  .banner_section .page_wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner_title {
+    padding: 40px 0 0 ;
+  }
+  .banner_title p {
+    max-width: 315px;
+    width: 100%;
+    font-size: 36px;
+    line-height: 34px;
+  }
+
+  .banner_desc {
+    padding: 20px 0 0;
+  }
+  .banner_desc p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .banner_shop_btn button{
+    width: 100%;
+    max-width: none;
+  }
+
+  .banner_img .img{
+    position: static;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .banner_img {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .star_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  
+
+   .img_top  {
+    max-width: 76px;
+    text-align: right;
+    /* padding: 40px 0 0 0 ; */
+  }
+  
+   .img_bottom {
+    max-width: 44px;
+    /* padding: 137px 0 0 0 ; */
+  }
+
+  .banner_brand_number {
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 20px 0 10px;
+    /* gap: 7.5px; */
+  }
+
+  .int-col, .qlt-col {
+    flex: 1 0 45%;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  .cst-col {
+    text-align: center;
+    flex: 1 0 100%; 
+  }
+
+  .vl-second {
+    display: none;
+  }
+  .vl {
+    /* display: none; */
+    height: 52px;
+  }
+
+  .banner_brand_number .banner_brand_total {
+    font-size: 24px;
+    line-height: 32.4px;
+  }
+  
+  .banner_brand_number .banner_brand_total_name {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+
+  .menu_bar {
+    display: block;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .res_dropdown_shop  {
+    display: none;
+  }
+  .res_dropdown_shop.active  {
+    display: block;
+  }
+  
+  .menu_bar .res_nav_bar.active {
+    display: flex;
+    margin: 5px;
+    padding: 25px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 93%;
+  }
+  .menu_bar .res_nav_bar {
+    display: none;
+  }
+
+  .menu_bar .checkbtn .fa.fa-bars {
+    font-size: 23px;
+    padding: 10px 0 0 0;
+  }
+
+  .res_nav_bar ul {
+    width: 100%;
+  }
+
+  .res_nav_bar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 3rem;
+  }
+  
+  .res_nav_bar .res_dropdown_shop {
+    padding: 10px 25px;
+  }
+  
+  .navbar_for_shop_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .navbar_for_shop_title a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+
+  }
+
+  .banner_img .banner_main_img {
+  position: relative ;
+  }
+
+  .other_brand_logo {
+    padding: 39px 0;
+    margin: -4px;
+  }
+
+  .brand_logo_img {
+    flex-wrap: wrap;
+    gap: 34px;
+    justify-content: center;
+  }
+
+  .brand_logo_img img {
+    max-height: 26px;
+    max-width: 100px;
+  }
+}
