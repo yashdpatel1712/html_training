@@ -1,0 +1,61 @@
+.offer_footer_container {
+    position: relative;
+}
+
+.footer_bgcolor {
+    background-color: #F0F0F0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    padding: 150px 0;
+}
+
+.footer_section {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_company_title {
+    font-family: "Integral CF", sans-serif;
+    font-weight: 700;
+    font-size: 33.45px;
+    line-height: 40.15px;
+}
+
+.footer_company_desc {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 25px 0 35px 0;
+}
+
+/* .footer_company_social_icons{
+    width: 28px;
+} */
+
+.footer_company_social_icons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.footer_company_social_icons > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+.footer_twitter, .footer_instagram, .footer_github{
+    background-color: white;
+}
+
+.footer_facebook{
+    background-color: black;
+}

@@ -1,0 +1,109 @@
+/* .get_offer_container {
+    padding: 80px 0 0 0;
+} */
+
+.get_offer_container .get_offer_bgcolor {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.get_offer_title, .get_offer_sub{
+    padding: 43px 64px;
+}
+
+.get_offer_title {
+    max-width: 550px;
+}
+
+.get_offer_title p{
+    color: white;
+    font-family: "Integral CF", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.get_offer_sub {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 349px;
+}
+
+.get_offer_sub_email {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.get_offer_sub_email i {
+    position: absolute;
+    left: 10px;
+    color: #aaa;
+    pointer-events: none;
+    padding: 17px;
+  }
+
+  .get_offer_sub .get_offer_sub_email input, .get_offer_sub .get_offer_sub_reg_btn button{
+    width: 100%;
+    border-radius: 62px;
+    padding: 12px 12px 12px 52px; 
+    border: none;
+}
+
+.get_offer_sub_reg_btn button {
+    font-family: "Satoshi Bold", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.6px;
+}
+
+@media only screen and (max-width: 786px) {
+    /* .get_offer_container {
+        padding: 50px 0 0 0;
+    } */
+
+    .get_offer_container .get_offer_bgcolor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get_offer_title {
+        padding: 32px 0;
+    }
+    
+    .get_offer_sub {
+        padding: 0  0 32px;
+
+    }
+    
+    .get_offer_title {
+        max-width: 297px;
+    }
+
+    .get_offer_title p{
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .get_offer_sub {
+        gap: 12px;
+        width: 311px;
+    }
+
+    .get_offer_sub_email i {
+        left: 16px;
+        /* padding: 17px; */
+    }
+    
+    .get_offer_sub_reg_btn button {
+        font-family: "Satoshi Bold", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+
+}   

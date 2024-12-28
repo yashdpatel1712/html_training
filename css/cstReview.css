@@ -1,6 +1,9 @@
+.review_container {
+    padding: 80px 0;
+}
  .review_header {
     display: flex;
-    padding: 80px 0 40px 0;
+    padding: 0 0 40px 0;
     align-items: center;
     justify-content: space-between;
  }
@@ -29,10 +32,17 @@
     height: 240px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    display: inline-block;
+    list-style: none;
 }
 
 .msg_data{
     padding: 28px 32px 0 32px;
+}
+
+.cst_review {
+    display: flex;
+    flex-direction: row;
 }
 
 .cst_name_verified{
@@ -60,7 +70,28 @@
 }
 
 
+/* .bx-wrapper {
+    } */
+    
+    .bx-wrapper {
+    max-width: 100% !important;
+    margin: 0;
+    margin-bottom: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+  }
+  
+  /* .bx-wrapper .bx-viewport {
+    border: none;
+    box-shadow: none;
+  } */
+
 @media only screen and (max-width: 786px) {
+
+    .review_container {
+        padding: 50px 0;
+    }
 
     .review_title p{
         font-size: 32px;
@@ -69,7 +100,7 @@
 
     .review_header {
         display: flex;
-        padding: 50px 0 24px 0;
+        padding: 0 0 24px 0;
         align-items: center;
         justify-content: space-between;
      }
@@ -85,6 +116,8 @@
      .specific_cst_msg {
         width: auto;
         height: auto;
+        display: inline-block;
+        list-style: none;
         /* max-height: 200px; */
      }
 
