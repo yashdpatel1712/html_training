@@ -8,15 +8,25 @@
     top: 50%;
     left: 0;
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     z-index: -1;
-    padding: 150px 0;
+    padding: 150px 0 0;
 }
 
 .footer_section {
     display: flex;
     flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 100px;
 }
+
+
+
+
+
+
+
+
 
 .footer_company_title {
     font-family: "Integral CF", sans-serif;
@@ -31,6 +41,7 @@
     font-size: 14px;
     line-height: 22px;
     padding: 25px 0 35px 0;
+    max-width: 248px;
 }
 
 /* .footer_company_social_icons{
@@ -58,4 +69,182 @@
 
 .footer_facebook{
     background-color: black;
+}
+
+.footer_option_title{
+    font-family: "Satoshi Bold", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0 0 25px 0;
+    max-width: 248px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.footer_option_type{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;    
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.footer_option {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_option_type_about {
+    margin: 0;
+    text-align: left;
+  }
+
+  .footer_container .divider-line{
+    padding: 50px 0 0 0;
+  }
+
+  .footer_company_rights_and_payments {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 25px 0 88px ;
+    }
+    
+    .footer_payments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+
+  }
+
+  .footer_payments > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+}
+
+.footer_company_rights {
+    display: flex;
+    align-items: center;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.9px;
+}
+
+.payment_visa, .payment_mastercard, .payment_paypal, .payment_applepay, .payment_gpay{
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+
+.footer_option_group1, .footer_option_group2 {
+    display: flex;
+    flex-direction: row;
+    gap: 100px; 
+    flex: 2;
+}
+
+
+@media only screen and (max-width: 786px) {
+    .footer_company_rights_and_payments {
+        flex-direction: column;
+        padding: 0 0 88px ;
+        gap: 16px;
+      }
+
+      .footer_payments {
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .footer_company_rights {
+        justify-content: center;
+      }
+
+      .footer_section {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer_sec_social {
+        width: 100%;
+        text-align: start;
+    }
+
+    .footer_company_title {
+        font-size: 29px;
+
+    }
+
+    .footer_company_desc {
+        max-width: fit-content;
+        padding: 14px 0 20px;
+        line-height: 20px;
+    }
+
+    .footer_option_title {
+        padding: 0 0 16px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .footer_option_group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .footer_option {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_option_type {
+    font-size: 13px;
+    line-height: 16px;
+    gap: 10px;
+    }
+
+    .footer_option_type_about {
+        max-width: 120px;
+    }
+
+    .footer_company_rights_and_payments {
+        flex-direction: column;
+        padding: 0 0 77px;
+        gap: 16px;
+    }
+
+    .footer_payments {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer_company_rights {
+        justify-content: center;
+        padding: 16px 0 0;
+    }
+
+    .footer_option_group1, .footer_option_group2 {
+        gap: 89px; 
+    }
+    
+    .footer_container .divider-line {
+        padding: 40px 0 0;
+    }
+
 }

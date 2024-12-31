@@ -68,10 +68,6 @@
     font-size: 16px;
     line-height: 22px;
 }
-
-
-/* .bx-wrapper {
-    } */
     
     .bx-wrapper {
     max-width: 100% !important;
@@ -82,10 +78,9 @@
     background: none !important;
   }
   
-  /* .bx-wrapper .bx-viewport {
-    border: none;
-    box-shadow: none;
-  } */
+  .bx-wrapper .bx-viewport {
+    max-width: 100% !important;
+  }
 
 @media only screen and (max-width: 786px) {
 
@@ -118,7 +113,6 @@
         height: auto;
         display: inline-block;
         list-style: none;
-        /* max-height: 200px; */
      }
 
      .msg_data{

@@ -41,9 +41,9 @@
       src: url("fonts/satoshi-webfont/Satoshi-Bold.woff.woff") format("woff");
       font-style: normal;
     }
-
   </style>
 </head>
+
 <body>
   <header class="header_section">
     <div id="overlay" style="display: none;"></div>
@@ -58,23 +58,41 @@
         <div class="header_block">
           <div class="menu_bar">
             <span class="checkbtn" id="menuBar"><i class="fa fa-bars" aria-hidden="true"></i></span>
-            
+
           </div>
 
-          
+
           <div class="logo">
             <p>SHOP.CO</p>
           </div>
           <nav class="nav_bar">
             <ul class="main_ul">
-              <li class="nav_bar_shop"><a href="#">Shop </a> <img src="img/down-arrow.png" alt="">
+              <li class="nav_bar_shop"><a href="#">Shop <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
                 <ul class="dropdown_shop">
-                  <li><a href="#" class="links-hidden">Men</a></li>
-                  <li><a href="#" class="links-hidden">Women</a></li>
-                  <li><a href="#" class="links-hidden">Child</a></li>
+                  <li><a href="#" class="links-hidden">Men</a>
+                    <ul class="dropdown_shop_men">
+                      <li><a href="#">Men1</a></li>
+                      <li><a href="#">Men2</a></li>
+                      <li><a href="#">Men3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="links-hidden">Women</a>
+                    <ul class="dropdown_shop_women">
+                      <li><a href="#" class="res_links-hidden">Women1</a></li>
+                      <li><a href="#" class="res_links-hidden">Women2</a></li>
+                      <li><a href="#" class="res_links-hidden">Women3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="links-hidden">Child</a>
+                    <ul class="dropdown_shop_child">
+                      <li><a href="#" class="res_links-hidden">Child1</a></li>
+                      <li><a href="#" class="res_links-hidden">Child2</a></li>
+                      <li><a href="#" class="res_links-hidden">Child3</a></li>
+                    </ul>
+                  </li>
                 </ul>
-              
+
               </li>
               <li class="nav_bar_scale"><a href="#">On Scale</a></li>
               <li class="nav_bar_arrival"><a href="#">New Arrivals</a></li>
@@ -87,31 +105,63 @@
           </div>
           <div class="user_account">
             <a href="#" id="searchButton" class="user_account_search"><img src="img/darkSearchBar.png"></a>
-            <div id="searchPopup" class="searchPopup" >
-                <input type="text" id="searchInput" placeholder="Type to search...">
-                <a href="#"><img src="img/darkSearchBar.png" alt=""></a>
+            <div id="searchPopup" class="searchPopup">
+              <input type="text" id="searchInput" placeholder="Type to search...">
+              <a href="#"><img src="img/darkSearchBar.png" alt=""></a>
             </div>
             <a href="javascript:void(0);"><img src="img/cart.png" class="cart" alt="Cart"></a>
             <a href="javascript:void(0);"><img src="img/profile.png" class="profile" alt="Profile"></a>
           </div>
-          </div>
         </div>
       </div>
     </div>
+    </div>
 
-
+    <!-- resopnsive dropdown menubar -->
     <div class="menu_bar">
       <nav class="res_nav_bar">
         <ul class="res_main_ul">
           <div class="navbar_for_shop_title">
-            <a href="#">Shop</a><li class="res_nav_bar_shop"> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <a href="#">Shop</a>
+            <li class="res_nav_bar_shop"> <i class="fa fa-chevron-down" aria-hidden="true"></i>
           </div>
-            <ul class="res_dropdown_shop">
-              <li><a href="#" class="res_links-hidden">Men</a></li>
-              <li><a href="#" class="res_links-hidden">Women</a></li>
-              <li><a href="#" class="res_links-hidden">Child</a></li>
+          <ul class="res_dropdown_shop">
+            <div class="navbar_for_men">
+              <a href="#" class="res_links-hidden">Men</a>
+              <li class="res_nav_bar_shop"><i class="toggle-men fa fa-chevron-down " aria-hidden="true"></i>
+            </div>
+            <ul class="res_dropdown_shop_men">
+              <li><a href="#" class="res_links-hidden">Men1</a></li>
+              <li><a href="#" class="res_links-hidden">Men2</a></li>
+              <li><a href="#" class="res_links-hidden">Men3</a></li>
             </ul>
-          
+            </li>
+
+            <div class="navbar_for_men">
+              <a href="#" class="res_links-hidden">Women</a>
+              <li class="res_nav_bar_shop"><i class=" toggle-women fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <ul class="res_dropdown_shop_women">
+              <li><a href="#" class="res_links-hidden">Women1</a></li>
+              <li><a href="#" class="res_links-hidden">Women2</a></li>
+              <li><a href="#" class="res_links-hidden">Women3</a></li>
+            </ul>
+
+            </li>
+
+            <div class="navbar_for_men">
+              <a href="#" class="res_links-hidden">Child</a>
+              <li class="res_nav_bar_shop"><i class=" toggle-child fa fa-chevron-down" aria-hidden="true"></i>
+            </div>
+            <ul class="res_dropdown_shop_child">
+              <li><a href="#" class="res_links-hidden">Child1</a></li>
+              <li><a href="#" class="res_links-hidden">Child2</a></li>
+              <li><a href="#" class="res_links-hidden">Child3</a></li>
+            </ul>
+
+            </li>
+          </ul>
+
           </li>
           <li class="res_nav_bar_scale"><a href="#">On Scale</a></li>
           <li class="res_nav_bar_arrival"><a href="#">New Arrivals</a></li>
@@ -130,7 +180,7 @@
           <P>FIND CLOTHES THAT MATCHES YOUR STYLE</P>
         </div>
         <div class="banner_desc">
-          <P>Browse through our diverse range of meticulously crafted garments, 
+          <P>Browse through our diverse range of meticulously crafted garments,
             designed to bring out your individuality and cater to your sense of style.</P>
         </div>
         <div class="banner_shop_btn">
@@ -152,22 +202,31 @@
             <p class="banner_brand_total_name">Happy Customers</p>
           </div>
         </div>
-      </div>
-      <div class="banner_img">
-        <img src="img/couple.png" class="banner_main_img"alt="">
-        <!-- <div class="star_img">
-          <div class="star_img_top">
-            <img src="img/star.png" class="img_top" alt="">
+      </div>          
+        <div class="banner_img">
+          <img src="img/couple.png" class="banner_main_img" alt="">
+          <div class="star_img">
+            <div class="star_img_top">
+              <img src="img/star.png" class="img_top" alt="">
+            </div>
+            <div class="star_img_bottom">
+              <img src="img/star.png" class="img_bottom" alt="">
           </div>
-          <div class="star_img_bottom">
-            <img src="img/star.png" class="img_bottom" alt="">
-          </div>
-        </div> -->
+        </div>
       </div>
-      
+
+    </div>
+    <div class="res_banner_img">
+      <div class="page_wrapper">
+        <img src="img/couple.png" class="res_banner_main_img" alt="">
+        <img src="img/star.png" class="res_img_top" alt="">
+        <img src="img/star.png" class="res_img_bottom" alt="">
+      </div>
     </div>
   </div>
-  
+
+
+
   <!-- other big brand logo -->
   <div class="other_brand_logo">
     <div class="page_wrapper">
@@ -183,445 +242,577 @@
 
 
   <!-- new arrivals container -->
-<div class="new_arrivals_container">
-  <div class="page_wrapper">
-    <span>NEW ARRIVALS</span>
-    <div class="arrivals_cloth">
-      <div class="arrivals_black_tshirt">
-        <div class="cloth_img">
-          <img src="img/blackTshirt.png" alt="">
-        </div>
-        <div class="cloth_name"><p>T-SHIRT WITH TAPE DETAILS</p></div>
-        <div class="rating_star_point">
-          <div class="rating_star">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-half.png" alt="">
-          </div>
-          <div class="rating_point">
-            <div class="get-rating"><p>4.5/</p></div><div class="full_rating"><p>5</p></div>
-          </div>
-        </div>
-        <div class="cloth_price">
-          <p class="new_price">$120</p>
-        </div>
-      </div>
-      <div class="arrivals_jeans">
-        <div class="cloth_img">
-          <img src="img/jeans.png" alt="">
-        </div>
-        <div class="cloth_name"><p>SKINNY FIT JEANS</p></div>
-        <div class="rating_star_point">
-          <div class="rating_star">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-half.png" alt="">
-          </div>
-          <div class="rating_point">
-            <div class="get-rating"><p>3.5/</p></div><div class="full_rating"><p>5</p></div>
-          </div>
-        </div>
-        <div class="cloth_price">
-          <p class="new_price">$240</p>
-          <p class="old_price">$260</p>
-          <div class="dis-per">
-            <p>-20%</p>
-          </div>
-        </div>
-      </div>
-      <div class="arrivals_jeans">
-        <div class="cloth_img">
-          <img src="img/shirt.png" alt="">
-        </div>
-        <div class="cloth_name"><p>CHECKERED SHIRT</p></div>
-        <div class="rating_star_point">
-          <div class="rating_star">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-half.png" alt="">
-          </div>
-          <div class="rating_point">
-            <div class="get-rating"><p>4.5/</p></div><div class="full_rating"><p>5</p></div>
-          </div>
-        </div>
-        <div class="cloth_price">
-          <p class="new_price">$180</p>
-        </div>
-      </div>
-      <div class="arrivals_jeans">
-        <div class="cloth_img">
-          <img src="img/tshirt.png" alt="">
-        </div>
-        <div class="cloth_name"><p>SLEEVE STRIPED T-SHIRT</p></div>
-        <div class="rating_star_point">
-          <div class="rating_star">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-half.png" alt="">
-          </div>
-          <div class="rating_point">
-            <div class="get-rating"><p>4.5/</p></div><div class="full_rating"><p>5</p></div>
-          </div>
-        </div>
-        <div class="cloth_price">
-          <p class="new_price">$130</p>
-          <p class="old_price">$160</p>
-          <div class="dis-per">
-            <p>-30%</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="arrivals_view_all">
-      <p>View All</p>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="divider-line">
-  <div class="page_wrapper">
-    <hr>
-  </div>
-</div>
-
-
-
-<!-- top selling container -->
-<div class="new_arrivals_container">
-  <div class="page_wrapper">
-    <span>TOP SELLING</span>
-    <div class="arrivals_cloth">
-      <div class="arrivals_black_tshirt">
-        <div class="cloth_img">
-          <img src="img/greenShirt.png" alt="">
-        </div>
-        <div class="cloth_name"><p>VERTICAL STRIPED SHIRT</p></div>
-        <div class="rating_star_point">
-          <div class="rating_star">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-          </div>
-          <div class="rating_point">
-            <div class="get-rating"><p>5.0/</p></div><div class="full_rating"><p>5</p></div>
-          </div>
-        </div>
-        <div class="cloth_price">
-          <p class="new_price">$212</p>
-          <p class="old_price">$232</p>
-          <div class="dis-per">
-            <p>-20%</p>
-          </div>
-        </div>
-      </div>
-      <div class="arrivals_jeans">
-        <div class="cloth_img">
-          <img src="img/orangeTshirt.png" alt="">
-        </div>
-        <div class="cloth_name"><p>COURAGE GRAPHIC T-SHIRT</p></div>
-        <div class="rating_star_point">
-          <div class="rating_star">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-          </div>
-          <div class="rating_point">
-            <div class="get-rating"><p>4.0/</p></div><div class="full_rating"><p>5</p></div>
-          </div>
-        </div>
-        <div class="cloth_price">
-          <p class="new_price">$145</p>
-        </div>
-      </div>
-      <div class="arrivals_jeans">
-        <div class="cloth_img">
-          <img src="img/barmuda.png" alt="">
-        </div>
-        <div class="cloth_name"><p>LOOSE FIT BERMUDA SHORTS</p></div>
-        <div class="rating_star_point">
-          <div class="rating_star">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-          </div>
-          <div class="rating_point">
-            <div class="get-rating"><p>3.0/</p></div><div class="full_rating"><p>5</p></div>
-          </div>
-        </div>
-        <div class="cloth_price">
-          <p class="new_price">$80</p>
-        </div>
-      </div>
-      <div class="arrivals_jeans">
-        <div class="cloth_img">
-          <img src="img/blackJeans.png" alt="">
-        </div>
-        <div class="cloth_name"><p>FADED SKINNY JEANS</p></div>
-        <div class="rating_star_point">
-          <div class="rating_star">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-full.png" alt="">
-            <img src="img/star-half.png" alt="">
-          </div>
-          <div class="rating_point">
-            <div class="get-rating"><p>4.5/</p></div><div class="full_rating"><p>5</p></div>
-          </div>
-        </div>
-        <div class="cloth_price">
-          <p class="new_price">$210</p>
-        </div>
-      </div>
-    </div>
-    <div class="arrivals_view_all">
-      <p>View All</p>
-    </div>
-  </div>
-</div>
-
-
-<!-- dressing style container  -->
-<div class="dress_style_container">
-  <div class="page_wrapper">
-    <div class="dress_style_bgcolor">
-      <div class="dress_style_title">
-        <p>BROWSE BY dress STYLE</p>
-      </div>
-      <div class="casual_formal_img" >
-        <div class="casual_img">
-          <img src="img/casual_full.png" alt="">
-          <div class="casual_title"><p>Casual</p></div>
-        </div>
-        <div class="formal_img">
-          <img src="img/formal_full.png"  alt="">
-          <div class="formal_title"><p>Formal</p></div>
-        </div>          
-      </div>
-      
-      
-      <div class="party_gym_img" >
-        <div class="party_img">
-          <img src="img/party_full.png" alt="">
-          <div class="party_title"><p>Party</p></div>
-        </div>
-        <div class="gym_img">
-          <img src="img/gym_full.png"  alt="">
-          <div class="gym_title"><p>Gym</p></div>
-        </div>          
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<!-- customer review container -->
-<div class="review_container">
-  <div class="page_wrapper">
-    <div class="review_header">
-      <div class="review_title">
-        <p>OUR HAPPY CUSTOMERS</p>
-      </div>
-      <div class="review_slider_button">
-          <img src="img/slide_prev.png" alt=""class="prev-slide">
-          <img src="img/slide_next.png" alt=""class="next-slide">
-      </div>
-    </div>
-    <div class="cst_msg_containter">
-      <ul class="bxslider">
-        <li class="specific_cst_msg cst_msg_block_1">
-          <div class="msg_data">
-            <div class="cst_review">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-            </div>
-            <div class="cst_name_verified">
-              <div class="cst_name">Sarah M.</div>
-              <div class="cst_verified"><img src="img/verified.png" alt=""></div>
-            </div>
-            <div class="cst_msg_review">
-              <p>"I'm blown away by the quality and style of the clothes I received from Shop.co. 
-                From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-            </div>
-          </div>
-        </li>
-
-        <li class="specific_cst_msg cst_msg_block_2">
-          <div class="msg_data">
-            <div class="cst_review">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-            </div>
-            <div class="cst_name_verified">
-              <div class="cst_name">Alex K.</div>
-              <div class="cst_verified"><img src="img/verified.png" alt=""></div>
-            </div>
-            <div class="cst_msg_review">
-              <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. 
-                The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
-            </div>
-          </div>
-        </li>
-
-        <li class="specific_cst_msg cst_msg_block_3">
-          <div class="msg_data">
-            <div class="cst_review">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-              <img src="img/star-full.png" alt="">
-            </div>
-            <div class="cst_name_verified">
-              <div class="cst_name">James L.</div>
-              <div class="cst_verified"><img src="img/verified.png" alt=""></div>
-            </div>
-            <div class="cst_msg_review">
-              <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. 
-                The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- <div class="offer_footer_container"> -->
-<!-- get offers by email -->
-<div class="offer_footer_container">
-  <div class="get_offer_container">
+  <div class="new_arrivals_container">
     <div class="page_wrapper">
-      <div class="get_offer_bgcolor get_offer_block">
-        <div class="get_offer_title"><p>STAY UPTO DATE ABOUT OUR LATEST OFFERS</p></div>
-        <div class="get_offer_sub">
-          <div class="get_offer_sub_email">
-            <i class="fa fa-envelope-o"></i>
-            <input type="email" class="get_offer_sub_email_fied" placeholder="Enter your email address" id="">
+      <span>NEW ARRIVALS</span>
+      <div class="arrivals_cloth">
+        <div class="arrivals_black_tshirt">
+          <div class="cloth_img">
+            <img src="img/blackTshirt.png" alt="">
           </div>
-          <div class="get_offer_sub_reg_btn"><button type="submit">Subscribe to Newsletter</button></div>
+          <div class="cloth_name">
+            <p>T-SHIRT WITH TAPE DETAILS</p>
+          </div>
+          <div class="rating_star_point">
+            <div class="rating_star">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-half.png" alt="">
+            </div>
+            <div class="rating_point">
+              <div class="get-rating">
+                <p>4.5/</p>
+              </div>
+              <div class="full_rating">
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+          <div class="cloth_price">
+            <p class="new_price">$120</p>
+          </div>
         </div>
+        <div class="arrivals_jeans">
+          <div class="cloth_img">
+            <img src="img/jeans.png" alt="">
+          </div>
+          <div class="cloth_name">
+            <p>SKINNY FIT JEANS</p>
+          </div>
+          <div class="rating_star_point">
+            <div class="rating_star">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-half.png" alt="">
+            </div>
+            <div class="rating_point">
+              <div class="get-rating">
+                <p>3.5/</p>
+              </div>
+              <div class="full_rating">
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+          <div class="cloth_price">
+            <p class="new_price">$240</p>
+            <p class="old_price">$260</p>
+            <div class="dis-per">
+              <p>-20%</p>
+            </div>
+          </div>
+        </div>
+        <div class="arrivals_jeans">
+          <div class="cloth_img">
+            <img src="img/shirt.png" alt="">
+          </div>
+          <div class="cloth_name">
+            <p>CHECKERED SHIRT</p>
+          </div>
+          <div class="rating_star_point">
+            <div class="rating_star">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-half.png" alt="">
+            </div>
+            <div class="rating_point">
+              <div class="get-rating">
+                <p>4.5/</p>
+              </div>
+              <div class="full_rating">
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+          <div class="cloth_price">
+            <p class="new_price">$180</p>
+          </div>
+        </div>
+        <div class="arrivals_jeans">
+          <div class="cloth_img">
+            <img src="img/tshirt.png" alt="">
+          </div>
+          <div class="cloth_name">
+            <p>SLEEVE STRIPED T-SHIRT</p>
+          </div>
+          <div class="rating_star_point">
+            <div class="rating_star">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-half.png" alt="">
+            </div>
+            <div class="rating_point">
+              <div class="get-rating">
+                <p>4.5/</p>
+              </div>
+              <div class="full_rating">
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+          <div class="cloth_price">
+            <p class="new_price">$130</p>
+            <p class="old_price">$160</p>
+            <div class="dis-per">
+              <p>-30%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrivals_view_all">
+        <p>View All</p>
       </div>
     </div>
   </div>
 
 
-  <!-- footer container -->
-  <div class="footer_container">
-    <div class="footer_bgcolor">
+
+  <div class="divider-line">
+    <div class="page_wrapper">
+      <hr>
+    </div>
+  </div>
+
+
+
+  <!-- top selling container -->
+  <div class="new_arrivals_container">
+    <div class="page_wrapper">
+      <span>TOP SELLING</span>
+      <div class="arrivals_cloth">
+        <div class="arrivals_black_tshirt">
+          <div class="cloth_img">
+            <img src="img/greenShirt.png" alt="">
+          </div>
+          <div class="cloth_name">
+            <p>VERTICAL STRIPED SHIRT</p>
+          </div>
+          <div class="rating_star_point">
+            <div class="rating_star">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+            </div>
+            <div class="rating_point">
+              <div class="get-rating">
+                <p>5.0/</p>
+              </div>
+              <div class="full_rating">
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+          <div class="cloth_price">
+            <p class="new_price">$212</p>
+            <p class="old_price">$232</p>
+            <div class="dis-per">
+              <p>-20%</p>
+            </div>
+          </div>
+        </div>
+        <div class="arrivals_jeans">
+          <div class="cloth_img">
+            <img src="img/orangeTshirt.png" alt="">
+          </div>
+          <div class="cloth_name">
+            <p>COURAGE GRAPHIC T-SHIRT</p>
+          </div>
+          <div class="rating_star_point">
+            <div class="rating_star">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+            </div>
+            <div class="rating_point">
+              <div class="get-rating">
+                <p>4.0/</p>
+              </div>
+              <div class="full_rating">
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+          <div class="cloth_price">
+            <p class="new_price">$145</p>
+          </div>
+        </div>
+        <div class="arrivals_jeans">
+          <div class="cloth_img">
+            <img src="img/barmuda.png" alt="">
+          </div>
+          <div class="cloth_name">
+            <p>LOOSE FIT BERMUDA SHORTS</p>
+          </div>
+          <div class="rating_star_point">
+            <div class="rating_star">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+            </div>
+            <div class="rating_point">
+              <div class="get-rating">
+                <p>3.0/</p>
+              </div>
+              <div class="full_rating">
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+          <div class="cloth_price">
+            <p class="new_price">$80</p>
+          </div>
+        </div>
+        <div class="arrivals_jeans">
+          <div class="cloth_img">
+            <img src="img/blackJeans.png" alt="">
+          </div>
+          <div class="cloth_name">
+            <p>FADED SKINNY JEANS</p>
+          </div>
+          <div class="rating_star_point">
+            <div class="rating_star">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-full.png" alt="">
+              <img src="img/star-half.png" alt="">
+            </div>
+            <div class="rating_point">
+              <div class="get-rating">
+                <p>4.5/</p>
+              </div>
+              <div class="full_rating">
+                <p>5</p>
+              </div>
+            </div>
+          </div>
+          <div class="cloth_price">
+            <p class="new_price">$210</p>
+          </div>
+        </div>
+      </div>
+      <div class="arrivals_view_all">
+        <p>View All</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- dressing style container  -->
+  <div class="dress_style_container">
+    <div class="page_wrapper">
+      <div class="dress_style_bgcolor">
+        <div class="dress_style_title">
+          <p>BROWSE BY dress STYLE</p>
+        </div>
+        <div class="casual_formal_img">
+          <div class="casual_img">
+            <img src="img/casual_full.png" alt="">
+            <div class="casual_title">
+              <p>Casual</p>
+            </div>
+          </div>
+          <div class="formal_img">
+            <img src="img/formal_full.png" alt="">
+            <div class="formal_title">
+              <p>Formal</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="party_gym_img">
+          <div class="party_img">
+            <img src="img/party_full.png" alt="">
+            <div class="party_title">
+              <p>Party</p>
+            </div>
+          </div>
+          <div class="gym_img">
+            <img src="img/gym_full.png" alt="">
+            <div class="gym_title">
+              <p>Gym</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- customer review container -->
+  <div class="review_container">
+    <div class="page_wrapper">
+      <div class="review_header">
+        <div class="review_title">
+          <p>OUR HAPPY CUSTOMERS</p>
+        </div>
+        <div class="review_slider_button">
+          <img src="img/slide_prev.png" alt="" class="prev-slide">
+          <img src="img/slide_next.png" alt="" class="next-slide">
+        </div>
+      </div>
+      <div class="cst_msg_containter">
+        <ul class="bxslider">
+          <li class="specific_cst_msg cst_msg_block_1">
+            <div class="msg_data">
+              <div class="cst_review">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+              </div>
+              <div class="cst_name_verified">
+                <div class="cst_name">Sarah M.</div>
+                <div class="cst_verified"><img src="img/verified.png" alt=""></div>
+              </div>
+              <div class="cst_msg_review">
+                <p>"I'm blown away by the quality and style of the clothes I received from Shop.co.
+                  From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="specific_cst_msg cst_msg_block_2">
+            <div class="msg_data">
+              <div class="cst_review">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+              </div>
+              <div class="cst_name_verified">
+                <div class="cst_name">Alex K.</div>
+                <div class="cst_verified"><img src="img/verified.png" alt=""></div>
+              </div>
+              <div class="cst_msg_review">
+                <p>"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co.
+                  The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="specific_cst_msg cst_msg_block_3">
+            <div class="msg_data">
+              <div class="cst_review">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+                <img src="img/star-full.png" alt="">
+              </div>
+              <div class="cst_name_verified">
+                <div class="cst_name">James L.</div>
+                <div class="cst_verified"><img src="img/verified.png" alt=""></div>
+              </div>
+              <div class="cst_msg_review">
+                <p>"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon
+                  Shop.co.
+                  The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- get offers by email & footer section  -->
+  <!-- get offers by email -->
+  <div class="offer_footer_container">
+    <div class="get_offer_container">
       <div class="page_wrapper">
-        <div class="footer_section">
-          <div class="footer_sec_social">
-            <div class="footer_company_title"><p>SHOP.CO</p></div>
-            <div class="footer_company_desc"><p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p></div>
-            <div class="footer_company_social_icons">
-              <div class="footer_twitter">
-                <img src="img/twitter.png" alt="">
+        <div class="get_offer_bgcolor get_offer_block">
+          <div class="get_offer_title">
+            <p>STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
+          </div>
+          <div class="get_offer_sub">
+            <div class="get_offer_sub_email">
+              <i class="fa fa-envelope-o"></i>
+              <input type="email" class="get_offer_sub_email_fied" placeholder="Enter your email address" id="">
+            </div>
+            <div class="get_offer_sub_reg_btn"><button type="submit">Subscribe to Newsletter</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer container -->
+    <div class="footer_container">
+      <div class="footer_bgcolor">
+        <div class="page_wrapper">
+          <div class="footer_section">
+            <div class="footer_sec_social">
+              <div class="footer_company_title">
+                <p>SHOP.CO</p>
               </div>
-              <div class="footer_facebook">
-                <img src="img/facebook.png" alt="">
+              <div class="footer_company_desc">
+                <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
               </div>
-              <div class="footer_instagram">
-                <img src="img/instagram.png" alt="">
-              </div>
-              <div class="footer_github">
-                <img src="img/github.png" alt="">
+              <div class="footer_company_social_icons">
+                <div class="footer_twitter">
+                  <img src="img/twitter.png" alt="">
+                </div>
+                <div class="footer_facebook">
+                  <img src="img/facebook.png" alt="">
+                </div>
+                <div class="footer_instagram">
+                  <img src="img/instagram.png" alt="">
+                </div>
+                <div class="footer_github">
+                  <img src="img/github.png" alt="">
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="footer_option">
-            <div class="footer_option_title">
-              <p>Company</p>
+            <div class="footer_option_group1">
+              <div class="footer_option">
+                <div class="footer_option_title">
+                  <p>Company</p>
+                </div>
+                <div class="footer_option_type">
+                  <div class="footer_option_type_about">
+                    <p>About</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Features</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Works</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Career</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="footer_option">
+                <div class="footer_option_title">
+                  <p>Help</p>
+                </div>
+                <div class="footer_option_type">
+                  <div class="footer_option_type_about">
+                    <p>Customer Support</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Delivery Details</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Terms & Conditions</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Privacy Policy</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="footer_option_type">
-              <div class="footer_option_type_about"><p>About</p></div>
-              <div class="footer_option_type_about"><p>Features</p></div>
-              <div class="footer_option_type_about"><p>Works</p></div>
-              <div class="footer_option_type_about"><p>Career</p></div>
+
+            <div class="footer_option_group2">
+              <div class="footer_option">
+                <div class="footer_option_title">
+                  <p>Faq</p>
+                </div>
+                <div class="footer_option_type">
+                  <div class="footer_option_type_about">
+                    <p>Account</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Manage Deliveries</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Orders</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Payments</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer_option">
+                <div class="footer_option_title">
+                  <p>Resources</p>
+                </div>
+                <div class="footer_option_type">
+                  <div class="footer_option_type_about">
+                    <p>Free eBooks</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Development Tutorial</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>How to - Blog</p>
+                  </div>
+                  <div class="footer_option_type_about">
+                    <p>Youtube Playlist</p>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
 
-          <div class="footer_option">
-            <div class="footer_option_title"><p>Help</p></div>
-              <div class="footer_option_type">
-                <div class="footer_option_type_about"><p>About</p></div>
-                <div class="footer_option_type_about"><p>Features</p></div>
-                <div class="footer_option_type_about"><p>Works</p></div>
-                <div class="footer_option_type_about"><p>Career</p></div>
-              </div>
+          <div class="divider-line">
+            <hr>
           </div>
 
-          <div class="footer_option">
-            <div class="footer_option_title"><p>Faq</p></div>
-              <div class="footer_option_type">
-                <div class="footer_option_type_about"><p>About</p></div>
-                <div class="footer_option_type_about"><p>Features</p></div>
-                <div class="footer_option_type_about"><p>Works</p></div>
-                <div class="footer_option_type_about"><p>Career</p></div>
-              </div>
-          </div>
-
-          <div class="footer_option">
-            <div class="footer_option_title"><p>Resources</p></div>
-              <div class="footer_option_type">
-                <div class="footer_option_type_about"><p>About</p></div>
-                <div class="footer_option_type_about"><p>Features</p></div>
-                <div class="footer_option_type_about"><p>Works</p></div>
-                <div class="footer_option_type_about"><p>Career</p></div>
-              </div>
+          <div class="footer_company_rights_and_payments">
+            <div class="footer_company_rights">
+              <p>Shop.co © 2000-2023, All Rights Reserved</p>
+            </div>
+            <div class="footer_payments">
+              <div class="payment_visa"><img src="img/Visa.png" alt=""></div>
+              <div class="payment_mastercard"><img src="img/Mastercard.png" alt=""></div>
+              <div class="payment_paypal"><img src="img/Paypal.png" alt=""></div>
+              <div class="payment_applepay"><img src="img/ApplePay.png" alt=""></div>
+              <div class="payment_gpay"><img src="img/GPay.png" alt=""></div>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
+
   </div>
 
-</div>
 
+  <script>
+    $(document).ready(function () {
+      var slider = $('.bxslider').bxSlider({
+        pager: false,
+        controls: false,
+        slideWidth: 395,
+        minSlides: 1,
+        maxSlides: 3,
+        moveSlides: 1,
+        slideMargin: 37,
+      });
 
-<script>
-  $(document).ready(function () {
-var slider = $('.bxslider').bxSlider({
-  pager: false,
-  controls: false,
-  slideWidth: 395,
-  minSlides: 1,
-  maxSlides: 3,
-  moveSlides: 1,
-  slideMargin: 20,
-  // adaptiveHeight: true,
-});
+      $('.prev-slide').click(function () {
+        slider.goToPrevSlide();
+      });
 
-$('.prev-slide').click(function () {
-  slider.goToPrevSlide();
-});
+      $('.next-slide').click(function () {
+        slider.goToNextSlide();
+      });
+    });
 
-$('.next-slide').click(function () {
-  slider.goToNextSlide();
-});
-});
-
-</script>
+  </script>
 
 
   <script>
@@ -630,51 +821,82 @@ $('.next-slide').click(function () {
       const navBar = document.querySelector(".res_nav_bar");
       const dropdownNavShop = document.querySelector(".res_nav_bar_shop");
       const dropdownShop = document.querySelector(".res_dropdown_shop");
-      
+      const dropdownShopForMen = document.querySelector(".res_dropdown_shop_men");
+      const dropdownShopForWomen = document.querySelector(".res_dropdown_shop_women");
+      const dropdownShopForChild = document.querySelector(".res_dropdown_shop_child");
+
       menuBar.addEventListener("click", function () {
-        event.stopPropagation(); 
+        event.stopPropagation();
         navBar.classList.toggle("active");
       });
 
       dropdownNavShop.addEventListener("click", function () {
-        event.stopPropagation(); 
+        event.stopPropagation();
         dropdownShop.classList.toggle("active");
+      });
+
+      // Select submenu toggle elements
+      const menToggle = document.querySelector(".toggle-men");
+      const womenToggle = document.querySelector(".toggle-women");
+      const childToggle = document.querySelector(".toggle-child");
+
+      menToggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+        dropdownShopForMen.classList.toggle("active");
+        dropdownShopForWomen.classList.remove("active");
+        dropdownShopForChild.classList.remove("active");
+      });
+
+      womenToggle.addEventListener("click", function (event) {
+        console.log('womenToggle: ', womenToggle);
+        event.stopPropagation();
+        dropdownShopForWomen.classList.toggle("active");
+        dropdownShopForMen.classList.remove("active");
+        dropdownShopForChild.classList.remove("active");
+      });
+
+      childToggle.addEventListener("click", function (event) {
+        event.stopPropagation();
+        dropdownShopForChild.classList.toggle("active");
+        dropdownShopForMen.classList.remove("active");
+        dropdownShopForWomen.classList.remove("active");
       });
     });
 
 
 
 
-    
+
     const searchButton = document.getElementById('searchButton');
-const searchPopup = document.getElementById('searchPopup');
+    const searchPopup = document.getElementById('searchPopup');
 
-// Show the search popup when the button is clicked
-searchButton.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevent the event from propagating to the document
-    searchPopup.style.display = 'block';
-});
+    // Show the search popup when the button is clicked
+    searchButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      searchPopup.style.display = 'block';
+    });
 
-// Close the search popup when clicking outside of it
-document.addEventListener('click', (event) => {
-    if (!searchPopup.contains(event.target)) {
+    // Close the search popup when clicking outside of it
+    document.addEventListener('click', (event) => {
+      if (!searchPopup.contains(event.target)) {
         searchPopup.style.display = 'none';
         overlay.style.display = 'none';
-    }
-});
+      }
+    });
 
-// Prevent clicks inside the popup from closing it
-searchPopup.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevent the event from propagating to the document
-});
+    // Prevent clicks inside the popup from closing it
+    searchPopup.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
 
-searchButton.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevent event bubbling
-    searchPopup.style.display = 'block';
-    overlay.style.display = 'block';
-    searchInput.focus(); // Automatically focus the input field
-});
+    searchButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      searchPopup.style.display = 'block';
+      overlay.style.display = 'block';
+      searchInput.focus();
+    });
 
   </script>
 </body>
+
 </html>

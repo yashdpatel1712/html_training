@@ -8,7 +8,6 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 57.6px;
-    /* text-align: center; */
 }
 
 .arrivals_cloth{
@@ -50,7 +49,6 @@
 
 .get-rating p{
     font-weight: 700;
-    /* margin: 0 0 0 13px; */
 }
 
  .full-rating p{
@@ -62,7 +60,6 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32.4px;
-    /* padding: 8px 0; */
     display: flex;
     gap: 10px;
 }
@@ -136,6 +133,7 @@
     .arrivals_cloth{
         gap: 16px;
         padding: 32px 0 0 16px;
+        overflow: scroll;
     }
 
     .arrivals_cloth .cloth_name p{
@@ -149,7 +147,7 @@
     .rating_star_point .rating_point {
         font-family: "Satoshi", sans-serif;
         font-size: 12px;
-        line-height: 16.2px;
+        align-items: center;
     }
     
     .rating_star_point .rating_star img{
@@ -181,6 +179,4 @@
         padding: 13px 153.5px;
         max-width: 358px;
     }
-    
-
 }

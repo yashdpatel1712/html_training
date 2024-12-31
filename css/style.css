@@ -95,27 +95,49 @@ table {
 .nav_bar .dropdown_shop li a:hover { 
 	background-color: #000000;
   color: white; 
-  /* min-width: 100px; */
 }
 
-.nav_bar_shop:focus-within .dropdown_shop {
+.nav_bar_shop:hover .dropdown_shop {
   display: block;
 }
 
+.nav_bar_shop .dropdown_shop_men,
+.nav_bar_shop .dropdown_shop_women,
+.nav_bar_shop .dropdown_shop_child {
+  display: none;
+}
+
+.nav_bar_shop .dropdown_shop > li:hover .dropdown_shop_men,
+.nav_bar_shop .dropdown_shop > li:hover .dropdown_shop_women,
+.nav_bar_shop .dropdown_shop > li:hover .dropdown_shop_child {
+  display: block;
+
+}
+.nav_bar_shop .dropdown_shop_men:hover,
+.nav_bar_shop .dropdown_shop_women:hover,
+.nav_bar_shop .dropdown_shop_child:hover {
+  display: block;
+}
 .dropdown_shop{
-  /* min-width: 150px; */
   display: none;
   position: absolute;
   z-index: 1;
   contain: inline-size;
+}
 
+.dropdown_shop_men, .dropdown_shop_women, .dropdown_shop_child{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin: -38px 105px;
+  contain: inline-size;
 }
 
 .dropdown_shop li a {
-  min-width: 100px;
-  background-color: #848484;
+  width: 100px;
+  background-color: #cacaca;
   display: inline-block;
-  padding: 8px 0;
+  padding: 8px 0 8px 8px;
   text-decoration: none;  
   font-size: 12px;
 
@@ -126,6 +148,12 @@ table {
 	position: absolute;  
 }
 
+.nav_bar .dropdown_shop_men,
+.nav_bar .dropdown_shop_women,
+.nav_bar .dropdown_shop_child {
+  display: none;
+  position: absolute;  
+}
 
 .menu_bar {
   display: none;
@@ -194,7 +222,6 @@ table {
 /* banner section */
 .banner_section {
   background-color: #F2F0F1;
-  /* position: relative; */
 }
 
 .banner_section .page_wrapper{
@@ -218,11 +245,13 @@ table {
 }
 
 .banner_img {
+  display: block;
   max-width: 500px;
-  right: 10px;
-  /* top: 0; */
   bottom: 0;
-  /* position: relative; */
+}
+
+.res_banner_img {
+  display: none;
 }
 
 .banner_img .banner_main_img {
@@ -238,7 +267,7 @@ table {
   position: absolute;
 }
 
-/* .banner_img .star_img_top img {
+.banner_img .star_img_top img {
   max-width: 104px;
   width: 100%;
   padding: 86px 81px 0 578px ;
@@ -248,7 +277,7 @@ table {
   max-width: 56px;
   width: 100%;
   padding: 297px 0 0 54px ;
-} */
+}
 
 .banner_desc p{
   font-family: "Satoshi", sans-serif;
@@ -323,6 +352,7 @@ table {
   justify-content: space-between;
 }
 
+
 @media only screen and (max-width: 786px) {
   .page_wrapper {
     padding: 0 16px;
@@ -335,16 +365,6 @@ table {
   .nav_bar{
     display: none;
   }
-
-
-
-  /* .menu_bar {
-    display: block;
-  }
-  
-  .main_header {
-    padding: 20px 0;
-  } */
 
   .menu_bar img {
     width: 18.75px;
@@ -389,58 +409,6 @@ table {
     height: 24px;
   }
 
-
-  /* .nav_bar.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
-
-
-  /* .nav_bar .main_ul{
-    flex-direction: column;
-    background: #848484;
-    position: fixed;
-    gap: 0;
-    top: 100px;
-    width: 100%;
-    left: 0;
-    z-index: 1000;
-    padding: 150px 0;
-  }
-  
-  .nav_bar .main_ul li a{
-    line-height: 17px;
-
-  }
-
-  .nav_bar .dropdown_shop li a {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-  }
-
-  .nav_bar_shop:focus-within .dropdown_shop {
-    position: static;
-    float: none;
-    display: block;
-  } */
-
-
-  /* .nav_bar ul li {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .nav_bar ul li a {
-    font-size: 20px;
-  }
-
-  .nav_bar_shop img{
-    text-align: right;
-  } */
-
   #searchPopup {
     position: fixed;
     top: 50%;
@@ -460,13 +428,11 @@ table {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
-    backdrop-filter: blur(5px); /* Blur effect */
-    z-index: 1000; /* Sits below the popup */
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
   }
-/* .hidden {
-    display: none;
-} */
+
 
 #searchPopup #searchInput{
 background-color: white;
@@ -508,17 +474,7 @@ border: none;
     max-width: none;
   }
 
-  .banner_img .img{
-    position: static;
-    max-width: 500px;
-    height: auto;
-  }
 
-  .banner_img {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
 
   .star_img{
     display: flex;
@@ -589,6 +545,24 @@ border: none;
   .res_dropdown_shop.active  {
     display: block;
   }
+  .res_dropdown_shop_men  {
+    display: none;
+  }
+  .res_dropdown_shop_men.active  {
+    display: block;
+  }
+  .res_dropdown_shop_women  {
+    display: none;
+  }
+  .res_dropdown_shop_women.active  {
+    display: block;
+  }
+  .res_dropdown_shop_child {
+    display: none;
+  }
+  .res_dropdown_shop_child.active  {
+    display: block;
+  }
   
   .menu_bar .res_nav_bar.active {
     display: flex;
@@ -611,33 +585,46 @@ border: none;
     width: 100%;
   }
 
-  .res_nav_bar ul li a {
+  li.res_nav_bar_shop{
+    align-items: center;
+    display: flex;
+}
+
+  .res_nav_bar a{
     color: black;
     text-decoration: none;
     font-size: 20px;
     line-height: 3rem;
   }
   
-  .res_nav_bar .res_dropdown_shop {
+  /* .res_nav_bar .res_dropdown_shop {
+    padding: 10px 25px;
+  } */
+
+  .res_nav_bar .res_dropdown_shop_men {
+    padding: 10px 25px;
+  }
+  .res_nav_bar .res_dropdown_shop_women {
+    padding: 10px 25px;
+  }
+  .res_nav_bar .res_dropdown_shop_child {
     padding: 10px 25px;
   }
   
-  .navbar_for_shop_title {
+  .navbar_for_shop_title,.navbar_for_men, .navbar_for_women, .navbar_for_child {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   
-  .navbar_for_shop_title a{
+  .navbar_for_shop_title a, .navbar_for_men a, .navbar_for_women a, .navbar_for_child a{
     text-decoration: none;
     font-size: 20px;
     color: black;
 
   }
 
-  .banner_img .banner_main_img {
-  position: relative ;
-  }
+
 
   .other_brand_logo {
     padding: 39px 0;
@@ -654,4 +641,36 @@ border: none;
     max-height: 26px;
     max-width: 100px;
   }
+
+  .banner_img {
+    display: none;
+  }
+  .res_banner_img {
+    display: block;
+  }
+
+    .res_banner_img .res_banner_main_img {
+      position: relative;
+      padding: 4px;
+  }
+
+  .res_banner_img .res_img_top, .res_banner_img .res_img_bottom {
+      position: absolute;
+    }
+    .res_banner_img .res_img_top {
+      padding: 40px 12px 0 0;
+      padding-right: 21px;
+      max-width: 76px;
+      max-height: 76px;
+      width: 100%;
+      right: 0;
+    }
+    .res_banner_img .res_img_bottom {
+      padding: 137px 27px;
+      max-width: 44px;
+      max-height: 44px;
+      width: 100%;
+  }
+
+
 }
