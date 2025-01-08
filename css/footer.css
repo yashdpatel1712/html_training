@@ -10,7 +10,7 @@
     width: 100%;
     /* height: 50%; */
     z-index: -1;
-    padding: 150px 0 0;
+    padding: 190px 0 0;
 }
 
 .footer_section {
@@ -19,14 +19,6 @@
     /* justify-content: space-between; */
     gap: 100px;
 }
-
-
-
-
-
-
-
-
 
 .footer_company_title {
     font-family: "Integral CF", sans-serif;
@@ -157,6 +149,10 @@
 
 
 @media only screen and (max-width: 786px) {
+
+    .footer_bgcolor {
+        padding: 190px 0 0;
+    }
     .footer_company_rights_and_payments {
         flex-direction: column;
         padding: 0 0 88px ;

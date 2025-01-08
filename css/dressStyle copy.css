@@ -13,20 +13,19 @@
 
 .casual_formal_img{
     padding: 0 0 20px 0;
-    grid-template-columns: 407px 684px;
 }
 
 .party_gym_img{
     padding: 0 0 76px 0;
-    grid-template-columns: 684px 407px;
 }
 
 .casual_formal_img, .party_gym_img{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-rows: 289px;
-    /* margin: 0 0 20px 0; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     justify-content: center;
+    align-items: stretch;
+    
 }
 
 .casual_formal_img .casual_img img,
@@ -88,26 +87,23 @@ border-radius: 20px;
     }
 
     .casual_formal_img, .party_gym_img{
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 20px 24px; */
-
-        grid-template-columns: 310px;
-        grid-template-rows: 190px 190px;
-        justify-content: center;
-        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 24px;
     }
 
     .casual_formal_img .casual_img img , .party_gym_img .gym_img img, 
     .casual_formal_img .formal_img img, .party_gym_img .party_img img {
+        /* max-width: 500px;
+        max-height: 190px; */
         max-width: 310px;
         max-height: 190px;
     }
 
     .party_gym_img .party_img img {
     border-radius: 20px;
-    object-fit: cover; 
-    object-position: 30% 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    object-position: 20% 100%; /* Crop 20% from the left and keep 80% from the right */
     }
     
     .casual_title p, .formal_title p, .party_title p, .gym_title p {
@@ -118,19 +114,6 @@ border-radius: 20px;
 
     .party_gym_img {
         padding: 0 0 27px 0;
-    }
-
-
-    /* .casual_formal_img{
-        padding: 0 0 20px 0;
-        grid-template-columns: 407px 684px;
-    } */
-    
-    /* .parx */
-    
-    .casual_formal_img .formal_img img, .party_gym_img .party_img img {
-        width: 100%;
-        /* max-height: 289px; */
     }
 
 }

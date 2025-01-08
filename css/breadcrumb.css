@@ -1,0 +1,51 @@
+.breadcrumb_container {
+    padding: 24px 0 0 0;
+}
+
+.breadcrumb_container .prev_current_page{
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb_container .prev_current_page a{
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb_container .prev_page , .breadcrumb_container .current_page , .breadcrumb_container .prev_page .prev_page_name a {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+.breadcrumb_container .prev_page {
+    gap: 12px;
+    
+}
+.breadcrumb_container .prev_page .prev_page_name a, .breadcrumb_container .current_page a{
+    gap: 4px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Satoshi Bold" , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.6px; 
+
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumb_container .prev_page .prev_page_name i{
+    font-size: 20px;
+}
+
+.breadcrumb_container .current_page a{
+    color: rgba(0, 0, 0, 1);
+
+}
+
+@media only screen and (max-width: 786px) {
+    .breadcrumb_container {
+        padding: 20px 0 0 0;
+    }
+}

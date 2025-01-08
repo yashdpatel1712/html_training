@@ -1,0 +1,369 @@
+.men-clothes-divider-line hr{
+    height:1px;
+    border-width:0;
+    color:gray;
+    background-color:rgba(0, 0, 0, 0.1)
+}
+
+.cloth_container .about_cloth{
+    display: flex;
+    flex-direction: row;
+    padding: 36px 0 0 0;
+    gap: 40px;
+}
+
+/* START - cloth img with grid */
+.cloth_container .cloth_img {
+    display: grid;
+    grid-template-columns: 152px 444px auto;
+    grid-template-rows: 167px 167px 167px;
+    gap: 14px;
+}
+
+.cloth_container .cloth_img img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+.cloth_container .cloth_img .active{
+    border: 2px solid black;
+}
+
+.cloth_container .cloth_img .side_img1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.cloth_container .cloth_img .side_img2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.cloth_container .cloth_img .side_img3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.cloth_container .cloth_img .main_img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+
+.cloth_container .cloth_img .cloth_details {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+}
+
+/* END - cloth img with grid */
+
+
+/* START - cloth details */
+.cloth_details .cloth_name p {
+    font-family: "Integral CF", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+.cloth_details .cloth_rating_star_point {
+    display: flex;
+    gap: 16px;
+    padding: 14px 0 0;
+}
+
+.cloth_rating_star_point .cloth_rating_star i {
+    color: #FFC633;
+    font-size: 25px;
+    padding: 0 7px 0 0;
+}
+
+.cloth_get_rating p, .cloth_full_rating p{
+    font-size: 16px;
+
+}
+
+.cloth_rating_star_point .rating_point{
+    justify-content: center;
+    align-items: center;
+}
+
+.cloth_rating_star_point .cloth_full_rating {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+}
+.cloth_rating_star_point .cloth_full_rating, .cloth_rating_star_point .cloth_get_rating  {
+    font-size: 16px;
+    line-height: 21.6px;
+}
+
+.cloth_details .cloth_price{
+    font-family: "Satoshi Bold", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43.2px;
+    display: flex;
+    gap: 12px;
+    padding: 10px 0 0 0;
+    
+}
+
+.cloth_details .cloth_price .old_price{
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: line-through;
+}
+
+.cloth_details .dis-per p{
+    color: #FF3333;
+    padding: 6px 14px;
+    font-size: 16px;
+}
+
+.cloth_details .dis-per {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF33331A;
+    border-radius: 62px;
+    background: #FF33331A;
+    line-height: 21.6px;
+}
+
+.cloth_details .cloth_desc{
+    padding: 10px 0 0 0;
+}
+
+.cloth_details .cloth_desc p, .cloth_details .cloth_colors p, .cloth_details .all_cloth_size p {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.6px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.cloth_details .men-clothes-divider-line-height {
+    padding: 12px 0;
+}
+
+.cloth_details .cloth_diff_color {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px 0 0 0;
+}
+
+.cloth_details .cloth_diff_color > div{
+    width: 37px;
+    aspect-ratio: 1 / 1;
+    border-radius: 62px;
+}
+
+  .cloth_color i {
+    display: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .cloth_color.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .cloth_color.active i {
+    display: block;
+  }
+  
+
+.cloth_details .cloth_diff_color .cloth_color1 {
+    background: #4F4631;
+    border: 1px solid #4F4631;
+
+}
+.cloth_details .cloth_diff_color .cloth_color2 {
+    background: #314F4A;
+    border: 1px solid #314F4A;
+}
+.cloth_details .cloth_diff_color .cloth_color3 {
+    background: #31344F;
+    border: 1px solid #31344F;
+}
+
+.cloth_details .cloth_diff_size {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 16px 0 0 0;
+}
+
+.cloth_details .cloth_diff_size p{
+    color: #00000099;
+    font-family: "Satoshi", sans-serif;
+    padding: 12px 24px;
+}
+.cloth_details .cloth_diff_size .cloth_size{
+    justify-content: center;
+    background: #F0F0F0;
+    border-radius: 62px;
+}
+
+.cloth_details .cloth_diff_size .cloth_size.active p{
+    font-family: "Satoshi Bold", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.6px;
+    color: white;
+}
+
+.cloth_details .cloth_diff_size .cloth_size.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    background: #000000;
+}
+
+.no_of_qnt_with_add_to_cart {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.no_of_qnt_with_add_to_cart .no_of_qnt .total_qnt {
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* width: 170px; */
+    /* height: 52px; */
+    border-radius: 62px;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 38px;
+    padding: 17px 20px;
+}
+
+.no_of_qnt_with_add_to_cart .add_to_cart {
+    align-items: center;
+    justify-content: center;
+}
+.no_of_qnt_with_add_to_cart .add_to_cart {
+    /* width: 400px;
+    height: 52px; */
+    border-radius: 62px;
+    background-color: black;
+    color: white;
+}
+
+.no_of_qnt_with_add_to_cart .add_to_cart p {
+    font-family: "Satoshi Bold", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.6px;
+    padding: 15px 157.5px;
+}
+/* END - cloth details */
+
+
+@media only screen and (max-width: 786px) {
+
+    .cloth_container .cloth_img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 290px 106px auto;
+        gap: 12px;
+    }
+
+    .cloth_container .cloth_img .side_img1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .cloth_container .cloth_img .side_img2 {
+        grid-column: 2 /3 ;
+        grid-row: 2 /3;
+    }
+    .cloth_container .cloth_img .side_img3 {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    .cloth_container .cloth_img .main_img {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .cloth_container .cloth_img .cloth_details {
+        grid-column: 1 / 4;
+        grid-row: 3 /   4;
+    }
+    
+    .cloth_details .cloth_diff_size {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* gap: 8px; */
+        padding: 16px 0 0 0;
+    }
+
+    .cloth_details .cloth_diff_size .cloth_size{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F0F0F0;
+        border: 1px solid #F0F0F0;
+    }
+
+    .cloth_details .cloth_diff_size p {
+        padding: 10px 20px;
+        line-height: 18.9px;
+    }
+
+    .cloth_details .all_cloth_size p, .cloth_details .cloth_colors p, .cloth_details .cloth_diff_size .cloth_size.active p {
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+
+    .cloth_details .cloth_desc p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .no_of_qnt_with_add_to_cart .no_of_qnt .total_qnt {
+        border-radius: 62px;
+        align-items: center;
+        gap: 16px;
+        padding: 12px 16px;
+    }
+
+    .no_of_qnt_with_add_to_cart .add_to_cart button {
+        width: auto;
+        height: auto;
+    }
+
+    .no_of_qnt_with_add_to_cart .add_to_cart p {
+        font-size: 13px;
+        line-height: 18.9px;
+        padding: 12.5px 80px;
+    }
+
+    .cloth_container .about_cloth {
+        padding: 20px 0 0 0;
+    }
+
+    .cloth_details .cloth_name p {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .cloth_details .cloth_rating_star_point {
+        gap: 16px;
+        padding: 12px 0 0;
+    }
+
+    .cloth_details .cloth_price {
+        font-size: 24px;
+        line-height: 32.4px;
+        padding: 10px 0 0 0;
+    }
+
+    .cloth_details .dis-per p {
+        font-size: 12px;
+    }
+}
