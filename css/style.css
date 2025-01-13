@@ -257,7 +257,7 @@ table {
 .banner_img .banner_main_img {
   width: 100%;
   position: absolute;
-  max-width: 668px; 
+  max-width: 635px; 
   object-fit: cover;
   right: 0%;
 }
@@ -293,10 +293,10 @@ table {
   padding: 32px 0 0;
 }
 
-.banner_shop_btn button{
-  max-width: 210px;
-  width: 100%;
-  padding: 15px;
+.banner_shop_btn a{
+  /* max-width: 210px;
+  width: 100%; */
+  padding: 15px 67.5px;
   border-radius: 62px;
   background-color: black;
   color: white;
